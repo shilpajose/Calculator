@@ -1,0 +1,9 @@
+button{
+    margin-left: 5px;
+}
+.div2 button, .div3 button, .div4 button, .div5 button{
+    margin:7px;
+}
+#cardd{
+    background-color:	#36454F;
+}
