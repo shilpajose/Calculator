@@ -20,46 +20,44 @@
     <div class="card container" style="width: 17.5rem;margin-top: 10%;" id="cardd">
         <div class="card-body col-lg-12 col-sm-12 col-md-12">
             <br>
-            <input type="text" name="" id="output" placeholder="0" class="form-control">
+            <input type="text" name="" id="result" placeholder="0" class="form-control">
             <br>
             <div class="div1">
                 <button type="button" onclick="allClear()" class="btn btn-warning">AC</button>
-                <button type="button" onclick="" class="btn btn-warning">+/-</button>
-                <button type="button" onclick="" class="btn btn-warning">%</button>
-                <button type="button" onclick="" class="btn btn-warning"><i class="fa-solid fa-divide"></i></button>
+                <button type="button" onclick="displayData('.')" class="btn btn-warning" id="dot">&#8226;</button>
+                <button type="button" onclick="displayData('%')" class="btn btn-warning">%</button>
+                <button type="button" onclick="displayData('/')" class="btn btn-warning"><i class="fa-solid fa-divide"></i></button>
             </div>
             <br>
             <div class="div2">
-                <button type="button" onclick="" class="btn btn-light">7</button>
-                <button type="button" onclick="" class="btn btn-light">8</button>
-                <button type="button" onclick="" class="btn btn-light">9</button>
-                <button type="button" onclick="" class="btn btn-warning"><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" onclick="displayData(7)" class="btn btn-light">7</button>
+                <button type="button" onclick="displayData(8)" class="btn btn-light">8</button>
+                <button type="button" onclick="displayData(9)" class="btn btn-light">9</button>
+                <button type="button" onclick="displayData('*')" class="btn btn-warning"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <br>
             <div class="div3">
-                <button type="button" onclick="" class="btn btn-light">4</button>
-                <button type="button" onclick="" class="btn btn-light">5</button>
-                <button type="button" onclick="" class="btn btn-light">6</button>
-                <button type="button" onclick="" class="btn btn-warning"><i class="fa-solid fa-minus"></i></button>
+                <button type="button" onclick="displayData(4)" class="btn btn-light">4</button>
+                <button type="button" onclick="displayData(5)" class="btn btn-light">5</button>
+                <button type="button" onclick="displayData(6)" class="btn btn-light">6</button>
+                <button type="button" onclick="displayData('-')" class="btn btn-warning"><i class="fa-solid fa-minus"></i></button>
             </div>
             <br>
             <div class="div4">
-                <button type="button" onclick="" class="btn btn-light">1</button>
-                <button type="button" onclick="" class="btn btn-light">2</button>
-                <button type="button" onclick="" class="btn btn-light">3</button>
-                <button type="button" onclick="" class="btn btn-warning"><i class="fa-solid fa-plus"></i></button>
+                <button type="button" onclick="displayData(1)" class="btn btn-light">1</button>
+                <button type="button" onclick="displayData(2)" class="btn btn-light">2</button>
+                <button type="button" onclick="displayData(3)" class="btn btn-light">3</button>
+                <button type="button" onclick="displayData('+')" class="btn btn-warning"><i class="fa-solid fa-plus"></i></button>
             </div>
             <br>
             <div class="div5">
-                <button type="button" onclick="" class="btn btn-light">0</button>
-                <button type="button" onclick="" class="btn btn-warning">.</button>
-                <button type="button" onclick="" class="btn btn-warning"><i
-                        class="fa-solid fa-delete-left"></i></button>
-                <button type="button" onclick="" class="btn btn-warning"><i class="fa-solid fa-equals"></i></button>
+                <button type="button" onclick="displayData(0)" class="btn btn-light">0</button>
+                <button type="button" onclick="backSpace()" class="btn btn-warning" id="back">&#9003;</button>
+                <button type="submit" onclick="evaluateEquals()" class="btn btn-warning"><i class="fa-solid fa-equals"></i></button>
             </div>
             <br>
         </div>
     </div>
 </body>
-
+<script src="./script.js"></script>
 </html>
